@@ -1,0 +1,12 @@
+id: dragon_fruit
+name: Dragon Fruit Disease Classification (example)
+package_name: com.example.replace_me
+project_path: /workspace/apps/dragon_fruit
+type: flutter
+environment: test
+timeout_seconds: 120
+suites: [generic, dragon_fruit]
+elements:
+  image_picker: {text: Select image}
+  classify: {text: Classify}
+  result: {key: classification_result}

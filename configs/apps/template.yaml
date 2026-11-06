@@ -1,0 +1,9 @@
+id: sample_app
+name: Sample Android Application
+package_name: com.example.sample
+project_path: /workspace/apps/sample_app
+type: flutter
+environment: staging
+timeout_seconds: 60
+suites: [generic]
+elements: {}

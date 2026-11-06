@@ -1,0 +1,9 @@
+services:
+  mobileqa:
+    build: .
+    working_dir: /workspace
+    volumes: [".:/workspace"]
+    environment:
+      ADB_SERVER_SOCKET: tcp:host.docker.internal:5037
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    entrypoint: ["dart","run","bin/mobileqa.dart"]
